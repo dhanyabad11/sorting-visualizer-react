@@ -1,0 +1,81 @@
+/* General Styles */
+.visualizer-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  button {
+    background-color: purple;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #5e0094;
+  }
+  
+  /* Array Container and Bars */
+  .array-container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+    overflow-x: auto;
+  }
+  
+  .array-bar {
+    background-color: purple;
+    margin: 0 2px;
+    transition: height 0.3s ease;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .array-bar {
+      width: 12px;
+    }
+  }
+  
+  @media screen and (min-width: 1024px) {
+    .array-bar {
+      width: 14px;
+    }
+  }
+  
+  /* Responsive Layout */
+  @media screen and (max-width: 767px) {
+    .array-bar {
+      width: 8px;
+      margin: 0 1px;
+    }
+  
+    button {
+      padding: 8px 15px;
+      margin: 5px;
+      font-size: 14px;
+    }
+  }
+  
+  /* Smaller Devices */
+  @media screen and (max-width: 480px) {
+    .array-bar {
+      width: 6px;
+      margin: 0 1px;
+    }
+  
+    button {
+      padding: 6px 12px;
+      margin: 5px;
+      font-size: 12px;
+    }
+  
+    .visualizer-container {
+      padding: 10px;
+    }
+  }
+  
